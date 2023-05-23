@@ -1,0 +1,15 @@
+header h1 {
+
+text-align: center;
+
+}
+
+@media all and (max-width: 500px ) {
+
+body {
+
+    color: blue;
+
+}
+
+}
