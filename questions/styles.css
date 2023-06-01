@@ -18,9 +18,9 @@
 
     body {
         text-align: center;
-        font-family: 'Poppins', sans-serif;
         overflow-x: hidden;
         background-color: rgb(255, 220, 168);
+        font-family: 'Poppins', sans-serif;
     }
 
     p {
@@ -45,6 +45,7 @@ margin: 0;
         padding: 50px;
 
     }
+
 
 
 
