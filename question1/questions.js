@@ -1,6 +1,6 @@
 (function(){
     
-const submit = document.querySelector(".submit");
+const submit = document.getElementsByClassName("submit");
 const q1 = document.querySelector("#q1");
 const q2 = document.querySelector("#q2");
 

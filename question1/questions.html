@@ -16,16 +16,22 @@
 </head>
 <body>
 
-    <section id="q1"class="show" action="/action_page.php">
-    <form>
-        <label for="q1">What emotion best represents how you feel about XYZ?</label>
-        <select id="q1List" name="q1List">
-          <option value="happy">Happy</option>
-          <option value="angry">Angry</option>
-          <option value="sad">Sad</option>
-        </select>
-        <input type="submit" class="submit">
-      </form>
+  <header>
+
+
+
+  </header>
+
+    <section id="q1"class="show">
+      <form action="/action_page.php">
+        <p>I feel accepted and represented within the Davis community</p>
+        <input type="radio" id="sd" name="q1" value="sd">
+        <label for="sd">Strongly Disagree</label><br>
+        <input type="radio" id="disagree" name="q1" value="disagree">
+        <label for="disagree">Disagree</label><br>
+        <input type="radio" id="neutral" name="q1" value="neutral">
+        <label for="neutral">Neutral</label>
+      
     </section>
 
     <section id="response1" class="hide">
