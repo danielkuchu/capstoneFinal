@@ -38,7 +38,7 @@
         height: 30px;
         left: 43px;
         top: 15px;
-        
+
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 600;
@@ -60,13 +60,13 @@
         height: 121px;
         left: 12px;
         top: 57px;
-        
+
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
         font-size: 12px;
         line-height: 18px;
-        
+
 
     }
 
@@ -89,10 +89,10 @@
 
     form p {
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 14px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
 
     }
 
@@ -115,6 +115,27 @@ font-size: 14px;
         color: #CCCCCC;
 
     }
+
+    #quizProg {
+
+        position: absolute;
+        background-color: rgb(253, 253, 253);
+        color: rgb(0, 255, 0);
+        max-width: 500px;
+        min-width: none;
+        width: 414px;
+        height: 12px;
+        right:0px;
+        top: 220px;
+
+    }
+
+    progress::-webkit-progress-bar {
+        background-color: rgb(212, 212, 212);
+     }
+     progress::-webkit-progress-value {
+        background-color: rgb(70, 240, 255);
+     }
 
 
 }
