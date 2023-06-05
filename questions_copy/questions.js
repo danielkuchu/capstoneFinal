@@ -10,6 +10,11 @@
     const q1ans = document.getElementById("q1_ans")
     const radioContainers = q1.querySelectorAll(".radio");
     const submitButton = document.getElementById("submitButton");
+    const q2 = document.getElementById("q2");
+    const q2ans = document.getElementById("q2_ans");
+    const checkboxes = q2.querySelectorAll("input[type='checkbox']");
+    const submitButton2 = document.getElementById("submitButton2")
+    const prog = document.getElementById("quizProg");
     
     function updateSubmitButtonState() {
       if (q1.querySelector("input[value]:checked")) {
@@ -40,6 +45,12 @@
       q1ans.className = "show";
   });
     
+  document.getElementById("q1_ans").addEventListener("submit", function(event) {
+    event.preventDefault();
+    q1.className = "hide";
+    q1ans.className = "hide";
+    q2.className = "show";
+});
   //OVERLAY JAVASCRIPT
   function closeOverlay() {
     var overlay = document.querySelector(".overlay");
@@ -57,5 +68,28 @@
   });
   
   document.querySelector(".closebtn").addEventListener("click", closeOverlay);
+
+  function updateSubmitButtonState2() {
+    if (q2.querySelector("input[value]:checked")) {
+      submitButton2.disabled = false;
+      submitButton2.classList.add("enabled");
+    } else {
+      submitButton2.disabled = true;
+      submitButton2.classList.remove("enabled");
+    }
+  }
+  
+  checkboxes.forEach((checkbox) => {
+    const checkboxes = radioContainer.querySelectorAll("input[type='checkbox']");
+    checkboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", updateSubmitButtonState2);
+      if (checkbox.checked) {
+        updateSubmitButtonState2();
+      }
+    });
+  });
+  
+  // Update the submit button state on form load
+  updateSubmitButtonState2(); 
   
 })();

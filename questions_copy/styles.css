@@ -133,7 +133,7 @@
         position: absolute;
     }
 
-    #q1, #q1_ans .radio, h3{
+    #q1, #q1_ans, .checkbox, .radio, h3{
         margin-left: 7%;
         margin-right: 5%;
     }
