@@ -32,28 +32,50 @@
       <li>Compare experiences with other UC Davis students and view the artists' intention as well</li>
     </ol>
 
-    <progress id="quizProg" value="10" max="100"> 10% </progress>
   </header>
 
   <!-- Question 1 -->
 
   <section id="q1" class="hide">
 
-    <form action="/action_page.php" name="Form1">
-      <p>I feel accepted and represented within the Davis community</p>
-      <input type="radio" id="sd" name="q1.0" value="sd">
-      <label for="sd">Strongly Disagree</label>
-      <input type="radio" id="disagree" name="q1.1" value="disagree">
-      <label for="disagree">Disagree</label>
-      <input type="radio" id="neutral" name="q1.2" value="neutral">
-      <label for="neutral">Neutral</label>
-      <input type="radio" id="agree" name="q1.3" value="agree">
-      <label for="agree">Agree</label>
-      <input type="radio" id="stagr" name="q1.4" value="stagr">
-      <label for="stagr">Strongly Agree</label>
-      <input type="submit" value="Submit" class="submit" id="submit1">
+    <form>
+      <img src="../images/question1.jpg" alt="Photo of the seal" class="q_img show">
+      <h3>I feel accepted and represented within the Davis community</h3>
+
+      <!-- Radio buttons -->
+      <div class="radio">
+        <input type="radio" name="options" value="option1">Strongly Disagree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option2">Disagree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option3">Neutral
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option4">Agree
+      </div>
+
+      <div class="radio">
+          <input type="radio" name="options" value="option5">Strongly Agree
+      </div>
+
+      <!-- Submit button -->
+      <div class="q_button">
+          <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+      </div>  
+      
+      <div class="home">
+        <a href="../index.html">Back to Home</a> 
+      </div>
+           
     </form>
 
+    
+    <progress id="quizProg" value="33.33" max="100"> 10% </progress>
   </section>
 
   <section id="response1" class="hide">
@@ -67,7 +89,7 @@
 
   </section>
 
-  <section id="susan1" class="show">
+  <section id="susan1" class="hide">
 <h2>Susan Shelton</h2>
 <h3>Seal Artist</h3>
 
