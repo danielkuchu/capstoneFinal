@@ -134,6 +134,8 @@
         background-color: #1D4776;
     }
 
+    /* Susan's First Response */
+
     #susan1 {
 
         position: fixed;
@@ -193,6 +195,8 @@
 
     }
 
+        /* Question 2 */
+
     #q2 {
 
         position: absolute;
@@ -213,6 +217,76 @@
         font-weight: 600;
 
     }
+
+    /* Response 2 */
+
+    #response2 {
+
+ text-align: center;
+ margin-top: 30px;
+
+    }
+
+        /* Susan's Second Resoonse */
+
+        #susan2 {
+
+            position: fixed;
+            margin: auto;
+            padding: auto;
+    
+    
+        }
+    
+        #susan2 p {
+    
+            width: 200px;
+            margin-bottom: 30px;
+            margin-left: 30px;
+            font-size: 9px;
+    
+        }
+    
+    
+        #susanContent2 {
+    
+            display: flex;
+            flex-direction: row;
+    
+        }
+    
+        #susanContent2 img {
+    
+            margin-left: 30px;
+    
+        }
+    
+        #susan2 h2,
+        h3 {
+    
+            margin-left: 30px;
+    
+        }
+
+        .twobuttons{
+            display: flex;
+            justify-content: center;
+            gap: 5%;
+        }
+
+        #learnmore, #nextButton{
+            width: 200px;
+            text-align: center;
+            margin-top: 4%;
+            font-size: 17px;
+            padding: 1em 2em;
+            border: transparent;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            background-color: #1D4776;
+            font-weight: 600;
+            color: white;
+            border-radius: 30px;
+        }
 
     .submitButton {
         /* Default styles for the disabled state */
