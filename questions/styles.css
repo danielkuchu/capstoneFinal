@@ -138,5 +138,54 @@
         background-color: rgb(70, 240, 255);
      }
 
+     #susan1 {
+
+        position: fixed;
+        transform: translateY(196px);
+        width: 414px;
+        height: 476px;
+        max-width: 500px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20 20 0 0;
+        box-shadow: 0px -4px 20px -1px rgba(102, 102, 102, 0.2);
+
+
+     }
+
+     #susan1 p {
+
+        width: 200px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        font-size: 9px;
+
+     }
+
+     #susanpic {
+
+        position: relative;
+        float: right;
+
+     }
+
+     #susanContent1 {
+
+        display: flex;
+        flex-direction: row;
+
+     }
+
+     #susanContent1 img {
+
+margin-left: 30px;
+
+     }
+
+     #susan1 h2, h3 {
+
+        margin-left: 30px;
+
+     }
+
 
 }
