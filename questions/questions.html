@@ -74,8 +74,7 @@
            
     </form>
 
-    
-    <progress id="quizProg" value="33.33" max="100"> 10% </progress>
+  
   </section>
 
   <section id="response1" class="hide">
@@ -89,7 +88,7 @@
 
   </section>
 
-  <section id="susan1" class="hide">
+  <section id="susan1" class="show">
 <h2>Susan Shelton</h2>
 <h3>Seal Artist</h3>
 
@@ -103,7 +102,7 @@
       relocated, and migrant farm worker children struggle to participate in our community.</p>
       <img src="images/quoteBot.png" width="35" height="29">
     </div>
-    <img src="images/susanpic.png" width="199" height="373" alt="Susan Picture" id="susanpic">
+    <img src="images/susanpic.png" width="350" height="373" alt="Susan Picture" id="susanpic">
 </div>
   </section>
 
@@ -111,7 +110,27 @@
 
   <section id="q2" class="hide">
 
-    <form action="/action_page.php">
+    <img src="images/q2image.png" width="160" height="183" alt="Question 2 Image">
+
+    <form>
+      <h3>Q2. Among these plants and animals, choose which you think are native to Davis, CA.</h3>
+      <input type="checkbox" name="wildlife" value="ducks"> Ducks<br>
+      <input type="checkbox" name="wildlife" value="grass"> Grass<br>
+      <input type="checkbox" name="wildlife" value="chickens"> Chickens<br>
+      <input type="checkbox" name="wildlife" value="lilypads"> Lily pads<br>
+      <input type="checkbox" name="wildlife" value="reeds"> Reeds<br>
+    </form>
+
+    <div class="q_button">
+    <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
+      </div>
+  </section>
+
+  <!-- Question 3 -->
+
+  <section id="q3" class="hide">
+
+    <form>
       <p>Among these plants and animals, choose which you think are native to Davis, CA.</p>
       <input type="checkbox" name="wildlife" value="ducks"> Ducks<br>
       <input type="checkbox" name="wildlife" value="grass"> Grass<br>
@@ -123,6 +142,7 @@
 
   </section>
 
+  <progress id="quizProg" value="33.33" max="100"> 10% </progress>
 </body>
 
 </html>
