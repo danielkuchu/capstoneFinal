@@ -6,12 +6,13 @@
       
       
     //JS FOR SUBMIT BUTTONS 
-    const form = document.getElementById("q1");
-    const radioContainers = form.querySelectorAll(".radio");
+    const q1 = document.getElementById("q1");
+    const q1ans = document.getElementById("q1_ans")
+    const radioContainers = q1.querySelectorAll(".radio");
     const submitButton = document.getElementById("submitButton");
     
     function updateSubmitButtonState() {
-      if (form.querySelector("input[value]:checked")) {
+      if (q1.querySelector("input[value]:checked")) {
         submitButton.disabled = false;
         submitButton.classList.add("enabled");
       } else {
@@ -32,5 +33,11 @@
     
     // Update the submit button state on form load
     updateSubmitButtonState();   
+
+    document.getElementById("q1").addEventListener("submit", function(event) {
+      event.preventDefault();
+      q1.className = "hide";
+      q1ans.className = "show";
+  });
     
 })();
