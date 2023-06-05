@@ -40,4 +40,22 @@
       q1ans.className = "show";
   });
     
+  //OVERLAY JAVASCRIPT
+  function closeOverlay() {
+    var overlay = document.querySelector(".overlay");
+    overlay.style.display = "none";
+  }
+  
+  document.getElementById("toggleOverlay").addEventListener("click", function(event) {
+    event.preventDefault();
+    var overlay = document.querySelector(".overlay");
+    if (overlay.style.display === "none") {
+      overlay.style.display = "block";
+    } else {
+      overlay.style.display = "none";
+    }
+  });
+  
+  document.querySelector(".closebtn").addEventListener("click", closeOverlay);
+  
 })();
