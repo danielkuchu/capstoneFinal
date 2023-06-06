@@ -17,6 +17,17 @@
 
 @media all and (max-width: 500px) {
 
+    #all {
+
+        position:absolute;
+        background-color: black;
+        height:100%;
+        width: 100%;
+        z-index: 5;
+        opacity: 50%;
+
+    }
+
     body {
         overflow-x: hidden;
         background-color: rgb(255, 255, 255);
@@ -25,19 +36,30 @@
 
     #closeRules {
 
-        padding: 5px;
+        padding: 5px 45px 5px 45px;
+        border-radius: 30px;
+        border: none;
+        width: 200px;
+        text-align: center;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #ffffff;
+        color: #1D4776;
+        font-weight: 600;
 
     }
 
     #instructions {
 
+        position: absolute;
         text-align: center;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        left: 5%;
+        top:20%;
         padding: 10px;
         height: 300px;
-        width: 400px;
+        width:350px;
         background-color: #1D4776;
         border-radius: 15px;
         z-index: 10;
