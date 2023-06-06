@@ -21,4 +21,6 @@ window.addEventListener('load', function () {
 
     //Add the animate class to start animating the slider
     document.querySelector('.slider').classList.add("animate");
+
+    //
 });
