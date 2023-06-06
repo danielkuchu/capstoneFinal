@@ -81,7 +81,7 @@
   </section>
 
     <form id="q1_ans" class="hide">
-      <img src="../images/question2.jpg" alt="Photo of the seal" class="q_img show">
+      <img src="../images/question2.jpg" alt="Photo of the seal" class="hide">
       <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
       <div class="results">
@@ -104,6 +104,19 @@
         <div class="group">
           <progress class="q1_ans" value="10" max="100">10</progress>
           <p><b>10%</b> Strongly Agree</p>
+        </div>
+      </div>
+
+      <!-- Buttons for Answer2 -->
+      <div class="twobuttons">
+        <button id="toggleOverlay">Learn More</button>
+        <button type="submit" id="nextButton">Next</button>
+      </div>  
+
+      <div class="overlay">
+        <div class="overlay-content">
+          <img src="../images/susanopen.png" alt = "Susan's testimonial">
+          <span class="closebtn" onclick="closeOverlay()">&times;</span>
         </div>
       </div>
 

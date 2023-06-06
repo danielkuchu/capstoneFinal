@@ -32,6 +32,7 @@
     const checkboxes = q2.querySelectorAll("input[type='checkbox']");
     const submitButton2 = document.getElementById("submitButton2")
     const q1ans = document.getElementById("q1_ans");
+    const prog = document.getElementById("quizProg");
 
     openInstructions.addEventListener("click", function(){
 
