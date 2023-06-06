@@ -23,40 +23,43 @@
         font-family: 'Poppins', sans-serif;
     }
 
-    header {
-
-        background-color: #1D4776;
-        color: white;
-        padding: 50px;
-        height: 120px;
-
-    }
-
-    header h2 {
-
-        position: absolute;
-        width: 121px;
-        height: 30px;
-        left: 43px;
-        top: 15px;
-
-        font-family: 'Poppins';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 30px;
-
-    }
-
-    ol li {
+    #closeRules {
 
         padding: 5px;
 
     }
 
-    ol {
+    #instructions {
 
-        position: absolute;
+        text-align: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+        height: 300px;
+        width: 400px;
+        background-color: #1D4776;
+        border-radius: 15px;
+        z-index: 10;
+
+    }
+
+    #instructions h2 {
+
+        color: white;
+
+    }
+
+    #instructions ol li {
+
+        padding: 5px;
+        color: white;
+
+    }
+
+    #instructions ol {
+
+        text-align: left;
         width: 289px;
         height: 121px;
         left: 12px;
