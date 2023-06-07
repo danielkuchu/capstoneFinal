@@ -20,18 +20,26 @@
 <body>
 
   <header>
-
-<h2>Instructions</h2>
-<ol>
-  <li>Look at each symbol</li>
-  <li>Tell us about your experience in Davis</li>
-  <li>Compare experiences with other UC Davis students and view the artists' intention as well</li>
-</ol>
-
+    <h3><a href="../index.html">Home</a></h3>
+    <button id="openRules">Instructions</button>
   </header>
+  <!-- Black 50% background of overlay -->
+  <div id="all" class="hide"></div>
+
+  <section id="instructions" class="show">
+      <h2>Instructions</h2>
+        <ol>
+          <li>Look at each symbol</li>
+          <li>Tell us about your experience in Davis</li>
+          <li>Compare experiences with other UC Davis students and view the artists' intention as well</li>
+        </ol>
+    <button id="closeRules">Close</button>
+  </section>
+
+    <!-- QUESTION 1 --> <!-- QUESTION 1 --> <!-- QUESTION 1 --> 
 
     <form id="q1" class="show">
-      <img src="../images/question1.jpg" alt="Photo of the seal" class="q_img show">
+      <img src="../images/q1.jpg" alt="Photo of the seal" class="q_img show">
       <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
       <!-- Radio buttons -->
@@ -60,15 +68,11 @@
           <button type="submit" id="submitButton" disabled class="submitButton">Submit</button>
       </div>  
       
-      <!-- Home button -->
-      <div class="home">
-        <a href="../index.html">Back to Home</a> 
-      </div>
            
     </form>
 
     <form id="q1_ans" class="hide">
-      <img src="../images/question2.jpg" alt="Photo of the seal" class="q_img show">
+      <img src="../images/q1.jpg" alt="Photo of the seal" class="q_img show">
       <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
       <div class="results">
@@ -96,23 +100,15 @@
 
       <!-- Learn More and Next Button -->
       <div class="twobuttons">
-        <button id="toggleOverlay">Learn More</button>
+        <button id="susan1">Learn More</button>
         <button type="submit" id="nextButton">Next</button>
       </div>  
 
-      <div class="overlay">
+      <div id="learnMore" class="hide">
         <div class="overlay-content">
-          <img src="../images/susanopen.png" alt = "Susan's testimonial">
+          <img src="../images/susanopen1.png" alt = "Susan's testimonial">
           <span class="closebtn" onclick="closeOverlay()">&times;</span>
         </div>
-      </div>
-
-      <!-- <div id="overlay" class="overlay">
-        <img src="../images/susanopen.png" alt = "Susan's testimonial">
-      </div>
-       -->
-      <div class="home">
-        <a href="../index.html">Back to Home</a> 
       </div>
            
     </form>

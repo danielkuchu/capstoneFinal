@@ -4,7 +4,28 @@
 
     //Make sure forms are blank when page reloads
       
-      
+    //Instructions
+    const rules = document.getElementById("instructions");
+    const closeInstructions = document.getElementById("closeRules");
+    const openInstructions = document.getElementById("openRules");
+
+    // INSTRUCTIONS OVERLAY SCRIPT
+    openInstructions.addEventListener("click", function(){
+      rules.className="show";
+      all.className="show";
+      });
+
+      closeInstructions.addEventListener("click", function(){
+          rules.className="hide";
+          all.className="hide";
+      });
+
+    //Learn More Overlays
+    const learnMore = document.getElementById("susan1");
+    const nextButton = document.getElementById("nextButton1");
+    const learnOverlay = document.getElementById("learnMore");
+    const closeOverlay = document.getElementById("closeX");
+
     //JS FOR SUBMIT BUTTONS 
     const q1 = document.getElementById("q1");
     const q1ans = document.getElementById("q1_ans")
