@@ -19,10 +19,11 @@
     const question3 = document.getElementById("q3");
 
     //Buttons
-    const learnMore = document.getElementById("toggleOverlay");
+    const learnMore1 = document.getElementById("toggleOverlay1");
+    const nextButton1 = document.getElementById("nextButton1");
     const learnOverlay = document.getElementById("learnMore");
     const closeOverlay = document.getElementById("closeX");
-    const nextButton = document.getElementById("nextButton");
+    
     const closeInstructions = document.getElementById("closeRules");
     const openInstructions = document.getElementById("openRules");
 
@@ -49,15 +50,13 @@
     });
 
 
-    document.getElementById("closeOverlay1").addEventListener("click", function(){
-        susan1.className="hide";
-    })
-
     // LEARN MORE OVERLAY SCRIPT
     
-    learnMore.addEventListener("click", function(event) {
-      event.preventDefault();
+    learnMore1.addEventListener("click", function(){
+
       learnOverlay.className="show";
+      all.className="show";
+
     });
     
     closeOverlay.addEventListener("click", function(event) {
@@ -72,10 +71,10 @@
 
     // });
 
-    nextButton.addEventListener("click", function(){
+    nextButton1.addEventListener("click", function(){
 
         response2.className="hide";
-        question3.className="show";
+        q2.className="show";
 
 
     });
