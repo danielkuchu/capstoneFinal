@@ -39,18 +39,19 @@
     // Update the submit button state on form load
     updateSubmitButtonState();   
 
+    //transition from q1to q1 response
     document.getElementById("q1").addEventListener("submit", function(event) {
       event.preventDefault();
       q1.className = "hide";
       q1ans.className = "show";
   });
     
-  document.getElementById("q1_ans").addEventListener("submit", function(event) {
-    event.preventDefault();
-    q1.className = "hide";
-    q1ans.className = "hide";
-    q2.className = "show";
-});
+    document.getElementById("q1_ans").addEventListener("submit", function(event) {
+      event.preventDefault();
+      q1.className = "hide";
+      q1ans.className = "hide";
+      q2.className = "show";
+  });
   //OVERLAY JAVASCRIPT
   function closeOverlay() {
     var overlay = document.querySelector(".overlay");

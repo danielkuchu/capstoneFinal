@@ -19,7 +19,9 @@
     const question3 = document.getElementById("q3");
 
     //Buttons
-    const learnMore = document.getElementById("learnmore");
+    const learnMore = document.getElementById("toggleOverlay");
+    const learnOverlay = document.getElementById("learnMore");
+    const closeOverlay = document.getElementById("closeX");
     const nextButton = document.getElementById("nextButton");
     const closeInstructions = document.getElementById("closeRules");
     const openInstructions = document.getElementById("openRules");
@@ -34,35 +36,41 @@
     const q1ans = document.getElementById("q1_ans");
     const prog = document.getElementById("quizProg");
 
+    // INSTRUCTIONS OVERLAY SCRIPT
     openInstructions.addEventListener("click", function(){
-
         rules.className="show";
         all.className="show";
-
     });
 
 
     closeInstructions.addEventListener("click", function(){
-
         rules.className="hide";
         all.className="hide";
-
     });
 
 
     document.getElementById("closeOverlay1").addEventListener("click", function(){
-
         susan1.className="hide";
-
-
     })
 
-    learnMore.addEventListener("click", function(){
-
-        response2.className="hide";
-        susan2.className= "show";
-
+    // LEARN MORE OVERLAY SCRIPT
+    
+    learnMore.addEventListener("click", function(event) {
+      event.preventDefault();
+      learnOverlay.className="show";
     });
+    
+    closeOverlay.addEventListener("click", function(event) {
+      event.preventDefault();
+      learnOverlay.className="hide";
+    });
+
+    // learnMore.addEventListener("click", function(){
+
+    //     response2.className="hide";
+    //     susan2.className= "show";
+
+    // });
 
     nextButton.addEventListener("click", function(){
 
