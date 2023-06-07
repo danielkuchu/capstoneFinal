@@ -16,13 +16,17 @@
     const response2 = document.getElementById("response2");
 
     //Question3, Response3
-    const question3 = document.getElementById("q3");
+    const q3 = document.getElementById("q3");
 
     //Buttons
-    const learnMore = document.getElementById("toggleOverlay");
+    const learnMore1 = document.getElementById("toggleOverlay1");
+    const nextButton1 = document.getElementById("nextButton1");
+    const learnMore2 = document.getElementById("toggleOverlay2");
+    const nextButton2 = document.getElementById("nextButton2");
+
     const learnOverlay = document.getElementById("learnMore");
     const closeOverlay = document.getElementById("closeX");
-    const nextButton = document.getElementById("nextButton");
+
     const closeInstructions = document.getElementById("closeRules");
     const openInstructions = document.getElementById("openRules");
 
@@ -49,13 +53,13 @@
     });
 
 
-    document.getElementById("closeOverlay1").addEventListener("click", function(){
-        susan1.className="hide";
-    })
+    // document.getElementById("closeOverlay1").addEventListener("click", function(){
+    //     susan1.className="hide";
+    // })
 
     // LEARN MORE OVERLAY SCRIPT
     
-    learnMore.addEventListener("click", function(event) {
+    learnMore1.addEventListener("click", function(event) {
       event.preventDefault();
       learnOverlay.className="show";
     });
@@ -72,11 +76,12 @@
 
     // });
 
-    nextButton.addEventListener("click", function(){
+    nextButton1.addEventListener("click", function(event){
 
-        response2.className="hide";
-        question3.className="show";
-
+        event.preventDefault();
+        q2.className="show";
+        nextButton1.className="hide";
+        learnMore1.className="hide";
 
     });
 
@@ -113,7 +118,7 @@
     event.preventDefault();
     q1.className = "hide";
     q1ans.className = "hide";
-    q2.className = "show";
+    // q2.className = "show";
 });
 
 })();
