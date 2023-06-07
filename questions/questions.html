@@ -47,9 +47,10 @@
 
     <form>
       <img src="../images/q1.jpg" alt="Photo of the seal" class="q_img show">
-      <h3>I feel accepted and represented within the Davis community</h3>
+      <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
       <!-- Radio buttons -->
+      
       <div class="radio">
         <input type="radio" name="options" value="option1">Strongly Disagree
       </div>
@@ -86,7 +87,7 @@
   <!-- QUESTION 1 ANSWER --> <!-- QUESTION 1 ANSWER --> <!-- QUESTION 1 ANSWER --> 
   <section id="q1_ans" class="hide">
     <form>
-      <img src="../images/question2.jpg" alt="Photo of the seal" class="hide">
+      <img src="../images/q1.jpg" alt="Photo of the seal" class="q_img show">
       <h3>Q1. I feel accepted and represented within the Davis community</h3>
 
       <div class="results">
@@ -117,32 +118,18 @@
         <button id="toggleOverlay">Learn More</button>
         <button type="submit" id="nextButton">Next</button>
       </div>  
-
-      <div class="overlay">
+      <!-- SUSAN OVERLAY --> <!-- SUSAN OVERLAY --> <!-- SUSAN OVERLAY -->
+      <div id="learnMore" class="hide">
         <div class="overlay-content">
-          <img src="../images/susanopen.png" alt = "Susan's testimonial">
-          <span class="closebtn" onclick="closeOverlay()">&times;</span>
+          <img src="../images/susanopen1.png" alt = "Susan's testimonial">
+          <span id ="closeX" class="closebtn" onclick="closeOverlay()">&times;</span>
         </div>
       </div>
     </section>
-
-  <!-- SUSAN OVERLAY --> <!-- SUSAN OVERLAY --> <!-- SUSAN OVERLAY -->
+  
   <section id="susan1" class="hide">
     <img src="images/close.png" width="30" height="30" id="closeOverlay1">
-    <h2>Susan Shelton</h2>
-    <h3>Seal Artist</h3>
-    <div id="susanContent1">
-      <div>
-        <img src="images/quoteTop.png" width="35" height="29">
-
-        <p>This panel portrays Davis as what we know is a wonderful place to raise our children. Our investment in our
-          children reflects our Vision, Aspiration, and Optimism for the future.</p>
-        <p>A child looks from the outside, symbolizing excluded children. Patwin and Japanese families were forcefully
-          relocated, and migrant farm worker children struggle to participate in our community.</p>
-        <img src="images/quoteBot.png" width="35" height="29">
-      </div>
-      <img src="images/susanpic.png" width="350" height="373" alt="Susan Picture" id="susanpic">
-    </div>
+ 
   </section>
 
   <!-- QUESTION 2 --><!-- QUESTION 2 --><!-- QUESTION 2 -->
@@ -276,7 +263,7 @@
         <button type="submit" id="nextButton">Next</button>
       </div>  
 
-      <div class="overlay">
+      <div class="overlay hide">
         <div class="overlay-content">
           <img src="../images/susanopen.png" alt = "Susan's testimonial">
           <span class="closebtn" onclick="closeOverlay()">&times;</span>
