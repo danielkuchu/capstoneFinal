@@ -21,7 +21,7 @@
     //Buttons
     const learnMore1 = document.getElementById("toggleOverlay1");
     const nextButton1 = document.getElementById("nextButton1");
-    const learnOverlay = document.getElementById("learnMore");
+    const learnOverlay1 = document.getElementById("learnMore1");
     const closeOverlay = document.getElementById("closeX");
     
     const closeInstructions = document.getElementById("closeRules");
@@ -54,14 +54,14 @@
     
     learnMore1.addEventListener("click", function(){
 
-      learnOverlay.className="show";
-      all.className="show";
+      learnOverlay1.className="show";
+      // all.className="show";
 
     });
     
     closeOverlay.addEventListener("click", function(event) {
       event.preventDefault();
-      learnOverlay.className="hide";
+      learnOverlay1.className="hide";
     });
 
     // learnMore.addEventListener("click", function(){
@@ -72,11 +72,8 @@
     // });
 
     nextButton1.addEventListener("click", function(){
-
-        response2.className="hide";
+        q1ans.className="hide";
         q2.className="show";
-
-
     });
 
     function updateSubmitButtonState() {

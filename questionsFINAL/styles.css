@@ -64,8 +64,7 @@
     /* STYLING THE INSTRUCTIONS POPUP */
     #instructions {
         position: absolute;
-        margin:auto;
-        margin-left: 7%;
+        margin-left: 9%;
         text-align: center;
         top:30%;
         padding: 10px;
@@ -185,10 +184,11 @@
      }
 
     /* STYLING QUESTION 1/3 */ 
-    #q1 img, #q1_ans img{
+    #q1 img, #q1_ans img, #q2 img, #q2_ans img, #q3 img, #q3_ans img{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 10%;
     }
 
     #q1 h3, .radio {
@@ -196,8 +196,12 @@
         margin-left: 7%;
     }
 
-    #q1, #q1_ans{
+    #q1, #q1_ans, #q2, #q3{
         position: absolute;
+    }
+
+    #q2 h3{
+        margin-left: 7%;
     }
 
     /* STYLING QUESTION 1 ANSWER */ 
@@ -224,6 +228,12 @@
         font-size: 1.2em;
     }
 
+    /* STYLING QUESTION 2*/ 
+    #q2 .checkboxes{
+        margin-left: 7%;
+        font-size: 1.2rem;
+    }
+
     /* STYLING SUBMIT BUTTON */ 
     .submitButton {
         /* Default styles for the disabled state */
@@ -237,6 +247,21 @@
         padding: 1em 2em;
         background-color: #CCCCCC;
         color: #9D9D9D;
+      }
+
+      #submitButton2, #submitButton3 {
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
       }
       
       .submitButton.enabled {
@@ -264,7 +289,7 @@
         align-items: center;
     }
     /* STYLE SUSAN OVERLAY */
-    #learnMore1 {
+    #learnMore, #learnMore2, #learnMore3 {
         position: fixed;
         background-color: rgba(0, 0, 0, 0.5);
         height: 100%;
@@ -275,7 +300,7 @@
       }
       
       
-      #learnMore1.open {
+      #learnMore.open, #learnMore2.open, #learnMore3.open  {
         animation: none;
       }
       
@@ -306,147 +331,13 @@
         cursor: pointer;
       }
 
-    /* Susan's First Response */
-
-    #susan1 {
-
-        position: fixed;
-        margin: auto;
-        padding: auto;
-        width: 414px;
-        height: 450px;
-        bottom: 0;
-        max-width: 500px;
-        padding-bottom: 20px;
-        background-color: rgb(255, 255, 255);
-        border-radius: 20 20 0 0;
-        box-shadow: 0px -4px 20px -1px rgba(102, 102, 102, 0.2);
-
-
-    }
-
-    #susan1 p {
-
-        width: 200px;
-        margin-bottom: 30px;
-        margin-left: 30px;
-        font-size: 9px;
-
-    }
-
-    #susanpic {
-
-        position: relative;
-        float: right;
-
-    }
-
-    #susanContent1 {
-
-        display: flex;
-        flex-direction: row;
-
-    }
-
-    #susanContent1 img {
-
-        margin-left: 30px;
-
-    }
-
-    #susan1 h2,
-    h3 {
-
-        margin-left: 30px;
-
-    }
-
-    #quoteBot {
-
-        transform: translateY(-15px);
-
-    }
-
-        /* Question 2 */
-
-    #q2 {
-
-        position: absolute;
-
-    }
-
-    #q2 img {
-
-        position: relative;
-        margin-top: 30px;
-        margin-bottom: 0;
-        left: 30%;
-
-    }
-
-    #q2 h3 {
-
-        font-weight: 600;
-
-    }
-
-    /* Response 2 */
-
-    #response2 {
-
- text-align: center;
- margin-top: 30px;
-
-    }
-
-        /* Susan's Second Resoonse */
-
-        #susan2 {
-
-            position: fixed;
-            margin: auto;
-            padding: auto;
-    
-    
-        }
-    
-        #susan2 p {
-    
-            width: 200px;
-            margin-bottom: 30px;
-            margin-left: 30px;
-            font-size: 9px;
-    
-        }
-    
-    
-        #susanContent2 {
-    
-            display: flex;
-            flex-direction: row;
-    
-        }
-    
-        #susanContent2 img {
-    
-            margin-left: 30px;
-    
-        }
-    
-        #susan2 h2,
-        h3 {
-    
-            margin-left: 30px;
-    
-        }
-
         .twobuttons{
             display: flex;
             justify-content: center;
             gap: 5%;
         }
 
-        #toggleOverlay1, #nextButton1{
+        #toggleOverlay, #toggleOverlay2, #toggleOverlay3, #nextButton, #nextButton2, #nextButton3{
             width: 200px;
             text-align: center;
             margin-top: 4%;
@@ -460,21 +351,36 @@
             border-radius: 30px;
         }
 
-        #toggleOverlay2, #nextButton2{
-            width: 200px;
+        #final{
             text-align: center;
-            margin-top: 4%;
-            font-size: 17px;
-            padding: 1em 2em;
-            border: transparent;
-            box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-            background-color: #1D4776;
-            font-weight: 600;
-            color: white;
-            border-radius: 30px;
+            margin-top: 50%;
         }
 
-    
+        #final h1{
+            font-size: 3em;
+        }
 
+        #final p{
+            font-size: 1.2em;
+        }
 
+        #final a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #final button{
+        /* Styles for the enabled state */
+        width: 250px;
+        text-align: center;
+        margin-top: 4%;
+        font-size: 17px;
+        padding: 1em 2em;
+        border: transparent;
+        box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        background-color: #1D4776;
+        font-weight: 600;
+        color: white;
+        border-radius: 30px;
+        }
 }
