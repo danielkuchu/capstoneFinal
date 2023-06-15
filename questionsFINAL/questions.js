@@ -32,7 +32,9 @@
     const q1ans = document.getElementById("q1_ans");
     const finalScreen = document.getElementById("final");
 
+    //progress bar + text
     let prog = document.getElementById("quizProg");
+    let progtext = document.getElementById("progtext"); 
 
     // INSTRUCTIONS OVERLAY SCRIPT
     openInstructions.addEventListener("click", function(){
@@ -130,6 +132,7 @@
         q1ans.className = "hide";
         q2.className = "show";
         prog.value = 66.66; 
+        progtext.innerHTML = "Question 2/3";
 });
 
       submitButton2.addEventListener("click", function(event){
@@ -143,6 +146,7 @@
         q2ans.className = "hide";
         q3.className = "show";
         prog.value = 90; 
+        progtext.innerHTML = "Question 3/3";
       });
 
       submitButton3.addEventListener("click", function(event){

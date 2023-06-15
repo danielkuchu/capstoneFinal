@@ -174,7 +174,20 @@
 
     }
 
+    /* STYLING RADIO BUTTON*/
+    .radio input[type='radio']:checked:after {
+        background-color: #1D4776;
+    }
+
     /* STYLING THE PROGRESS BAR */ /* STYLING THE PROGRESS BAR */ /* STYLING THE PROGRESS BAR */
+    #progtext{
+        position: fixed;
+        bottom: 3%;
+        left: 40%; 
+        text-align: center;
+        color: #9D9D9D;
+        margin-top: 5%;
+    }
     #quizProg {
         position: fixed;
         bottom: 0;
@@ -215,6 +228,7 @@
     #q2 h3{
         margin-left: 7%;
     }
+
 
     /* STYLING QUESTION 1 ANSWER */ 
     .q1_ans{
