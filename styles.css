@@ -11,17 +11,25 @@ p{
 }
 
 .sec1, .sec3{
-    background-color: #FFF9E5;
+    background-color: #1D4776;
     padding-top: 5%;
     padding-bottom: 5%;
 }
 
-.sec1 h1{
+.sec3{
+    color: white;
+}
+
+.sec3 span{
+    color: #FFBF00;
+}
+
+/* .sec1 h1{
     color: #1D4776;
     font-size: 3em;
     font-weight: 600;
     font-family: 'Hammersmith One', sans-serif;
-}
+} */
 
 .dots{
     margin-top: 7%;
@@ -29,13 +37,14 @@ p{
 .card{
     color: white;
     text-align: left;
-    background-color: #1D4776;
+    background-color: #163251;
     margin: 10%;
     margin-top: 50%;
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 5%;
     padding-right: 10%;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
 }
 
 .card h2{
@@ -44,6 +53,11 @@ p{
 
 .sec2{
     margin: 10%;
+    height: 250px;
+}
+
+.sec2 .content{
+    margin-top: 30%;
 }
 a{
     text-decoration: none;
@@ -91,16 +105,18 @@ a{
 
 .sec3 .left{
     text-align: left;
+    margin-top: 20%;
 }
 
 .sec3 .right{
     text-align: right;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 #one {
     width: 100%;
     overflow-x: hidden;
+    margin-top: 50%;
 }
 
 .slider {
@@ -132,10 +148,37 @@ a{
     animation-iteration-count: infinite;
 }
 
-footer{
-    background-color: #1D4776;
+/* animate top */
+#test {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: 50vw;
+    height: 750px;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1, #text2 {
+    position: absolute;
     color: white;
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Hammersmith One', sans-serif;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    user-select: none;
+}
+footer{
+    background-color: white;
+    color: black;
     padding: 20px;
+    height: 450px;
+    margin-top: 10%;
 }
 
 footer .links{
@@ -151,8 +194,8 @@ footer a{
     padding: 1em 2em;
     border: transparent;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
-    background: white;
-    color: #1D4776;
+    background: #1D4776;
+    color: white;
     border-radius: 30px;
 }
 }
